@@ -1,0 +1,6 @@
+- Off-policy algorithms: Does not need to match the target policy(?)
+- Correlated and Uncorrelated Noises
+- MPO and SAC
+- Deterministic Policy: DDPG and TD3 —> Action Noise is typically white noise(Drawn from temporally uncorrelated Gaussian distributions) or Ornstein-Uhlenbeck(OU) noise.
+- Stochastic Policy: SAC and MPO: —> Action sampling itself introduces randomness.
+- As the sampling noise is typically uncorrelated over time, these algorithms employ a scale-modulated version of additive white noise, where the noise scale varies for different states.
